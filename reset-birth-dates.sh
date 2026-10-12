@@ -1,11 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
-if [[ -n "$1" ]]; then
-    RESET_COMMIT=$1
+if [ $# -gt 0 ]; then
+    RESET_COMMIT="$1"
 else
-    RESET_COMMIT="f2cfe46245ef67f35302e79b0d9c4993011d082c"
+    RESET_COMMIT="bc0238e371780fb0a294e62c5f2daa2b32c82154"
 fi
 set -x
+git pull --rebase origin
 git checkout "$RESET_COMMIT" data/birth-dates/*
 git commit -m "Reset birth dates"
 set +x
+
+echo "\nYou can check the latest commit now and then push it to GitHub."

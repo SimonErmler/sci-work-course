@@ -3,9 +3,9 @@ Documentation on LaTeX
 
 ## Platform-specific Installation Guides for LaTeX/Editor
 
-* [Windows Vista, 7, 8, 10](./install-windows.md)
-* [Mac OS X](./install-macosx.md)
-* [Linux (Ubuntu, Debian)](./install-linux.md)
+* [Windows Vista, 7, 8, 10, 11](./install-windows.md)
+* [macOS](./install-macos.md)
+* [Linux (Arch Linux, Debian, Ubuntu)](./install-linux.md)
 
 ## Frequently Asked Questions
 
